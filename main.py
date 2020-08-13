@@ -10,7 +10,7 @@ def find_duplicates(data):
     for i in range(len_list):
         k = i + 1
         for j in range(k, len_list):
-            if (data[i] == data[j]) and (data[i] not in results):
+            if data[i] == data[j] and data[i] not in results:
                 results.append(data[i])
 
     return results
